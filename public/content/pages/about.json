@@ -1,0 +1,30 @@
+
+{
+  "title": "About Sarz Recording Studio",
+  "content": "Sarz Recording Studio is a UK-registered company specializing in professional Urdu dubbing services. We bridge the linguistic gap for global dramas, films, and series, ensuring your content resonates perfectly with Urdu-speaking audiences worldwide. Our team of native voice actors and expert sound engineers is dedicated to delivering excellence from translation to final audio delivery.",
+  "trusted_by_title": "Trusted by Producers Worldwide",
+  "client_locations": [
+    "Dubai",
+    "USA",
+    "UK",
+    "France",
+    "Spain",
+    "Turkey",
+    "Australia"
+  ],
+  "features": [
+    {
+      "title": "Unlimited Characters",
+      "description": "We handle projects of any scale, providing a diverse range of voices to fit every character."
+    },
+    {
+      "title": "Authentic Native Voices",
+      "description": "Our voice actors are native Urdu speakers, ensuring authentic accents and emotional delivery."
+    },
+    {
+      "title": "Studio-Quality Sound",
+      "description": "We use state-of-the-art equipment for crystal-clear, professional-grade audio."
+    }
+  ]
+}
+   

@@ -1,0 +1,65 @@
+
+backend:
+  name: git-gateway
+  branch: main # Or master
+
+media_folder: "public/uploads" # Folder where user uploaded files should be stored
+public_folder: "/uploads" # The src attribute for uploaded media will begin with this path
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "public/content/settings.json"
+        label: "Global Settings"
+        name: "settings"
+        fields:
+          - { label: "Company Name", name: "company_name", widget: "string" }
+          - { label: "Contact Email", name: "contact_email", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "public/content/pages/home.json"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Sub-headline", name: "subheadline", widget: "string" }
+          - { label: "CTA Text", name: "cta_text", widget: "string" }
+          - { label: "Hero Background Image", name: "hero_image", widget: "image", required: false }
+      - file: "public/content/pages/about.json"
+        label: "About Us"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "About Us" }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Trusted By Title", name: "trusted_by_title", widget: "string", default: "Trusted by Producers Worldwide" }
+          - { label: "Client Locations", name: "client_locations", widget: "list", field: { label: "Location", name: "location", widget: "string" } }
+          - { label: "Features", name: "features", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "string" }
+            ]}
+      - file: "public/content/pages/services.json"
+        label: "Services"
+        name: "services"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Our Services" }
+          - { label: "Service List", name: "service_list", widget: "list", field: { label: "Service", name: "service_item", widget: "string" } }
+      - file: "public/content/pages/why-choose-us.json"
+        label: "Why Choose Us"
+        name: "why_choose_us"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Why Choose Us?" }
+          - { label: "Reasons", name: "reasons", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Icon (e.g., Globe, Star, Users, CheckCircle)", name: "icon", widget: "string" }
+            ]}
+      - file: "public/content/pages/contact.json"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Get In Touch" }
+          - { label: "Description", name: "description", widget: "markdown" }
+   

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarz Recording Studio | Professional Urdu Dubbing Services</title>
+    <meta name="description" content="Sarz Recording Studio — UK-registered company offering professional Urdu dubbing services for Turkish dramas, Spanish telenovelas, English series, and global films. Translation, dubbing, mixing, and HQ audio delivery for clients in Dubai, USA, UK, France, Spain, Turkey, Australia, and worldwide." />
+    <meta name="keywords" content="Urdu dubbing services, Turkish drama Urdu dubbing, Spanish drama Urdu dubbing, English series Urdu dubbing, Professional Urdu voiceover, Urdu translation and dubbing studio, High-quality Urdu audio mixing, UK Urdu dubbing company, Global Urdu dubbing services" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Netlify Identity Widget for CMS authentication -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+
+    <!-- Netlify Identity script to handle login redirects -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+   
